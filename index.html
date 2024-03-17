@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <title>Filter webapp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Protest Riot">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Honk">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+</head>
+<body background="bg.jpg" style="background-size: cover;">
+    <center>
+            <div class="header row">
+                <div class="column">
+                    <img src="logo_2.png" class="logo" style="width: 200px; height: 80px;">
+                </div> 
+                <div class="column">
+                    <h1>MUSTACHE & LIPSTICK</h1>
+                <label>FILTER</label>
+                    </div>
+                </span>
+            </div>
+
+            <div class="hold">
+                <br>
+                <h2>REAL TIME FILTER</h2>
+                <br>
+                <button class="snapshot" onclick="take_snapshot()">Take Snapshot<br><img src="snapshot_photo.png"></button>
+                <br>
+                <button class="lipstick" onclick="change_lip()"><img src="Png lips design free image - 480x480.png" style="height: 40px; width: 40px;"></button>
+                <button class="mustache" onclick="change_mustache()"><img src="Mustache.png" style="height: 40px; width: 40px;"></button>
+            </div>
+            
+    </center>
+
+    <script src="main.js"></script>
+</body>

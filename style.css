@@ -1,0 +1,166 @@
+.header{
+    width: 100%;
+    height: 85px;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+h1 {
+    font-size: 30px !important;
+    margin-top: 10px;
+    color: yellow;
+    font-family: "Pacifico", sans-serif;
+    letter-spacing: 2px;
+}
+.logo{
+    margin-top: -10px;  
+}
+
+.lipstick, .mustache{
+    margin: 5px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
+}
+
+label{
+    color: white;
+    font-size: 20px;
+    font-family: "Protest Riot", sans-serif;
+    letter-spacing: 2px;
+    margin-top: -5px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+ 
+.hold {
+    margin-top: 20px;
+    width: 600px;
+    height: 550px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 45px;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
+}
+h2 {
+    margin-top: -6px;
+    font-family: "honk", sans-serif;
+    font-size: 50px;
+}
+.snapshot{
+    margin-top: -10px;
+    padding: 10px;
+    color: white;
+    background-color: #ffcb43;
+    background-image: linear-gradient(to right, #FDC830, #f12711, #F37335, #f5af19);
+    background-size: 300%;
+    background-position: left;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 30px #ff6425;
+    transition: 0.5s background-position ease-in-out, 0.5s box-shadow ease-in-out;
+}
+
+.snapshot:hover{
+    background-position: right;
+    box-shadow: 1px 1px 30px rgb(255, 0, 208);
+}
+
+canvas {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example{
+    from{box-shadow: 1px 1px 38px red;}
+    to {box-shadow: 1px 1px 50px yellow;}
+}
+
+/*toggle switch*/
+
+.switch {
+    --circle-dim: 1.4em;
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+    
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f5aeae;
+    transition: .4s;
+    border-radius: 30px;
+  }
+  
+  .slider-card {
+    position: absolute;
+    content: "";
+    height: var(--circle-dim);
+    width: var(--circle-dim);
+    border-radius: 20px;
+    left: 0.3em;
+    bottom: 0.3em;
+    transition: .4s;
+    pointer-events: none;
+  }
+  
+  .slider-card-face {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    perspective: 1000px;
+    border-radius: 50%;
+    transition: .4s transform;
+  }
+  
+  .slider-card-front {
+    background-color: #DC3535;
+  }
+  
+  .slider-card-back {
+    background-color: #379237;
+    transform: rotateY(180deg);
+  }
+  
+  input:checked ~ .slider-card .slider-card-back {
+    transform: rotateY(0);
+  }
+  
+  input:checked ~ .slider-card .slider-card-front {
+    transform: rotateY(-180deg);
+  }
+  
+  input:checked ~ .slider-card {
+    transform: translateX(1.5em);
+  }
+  
+  input:checked ~ .slider {
+    background-color: #9ed99c;
+  }
